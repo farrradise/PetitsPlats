@@ -1,0 +1,17 @@
+.content {
+    width : 1300px;
+    margin : auto;
+}
+main {
+    
+    display : flex;
+    flex-flow : row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+    .recipeCard {
+        width : 31%;
+    }
+
+
+}

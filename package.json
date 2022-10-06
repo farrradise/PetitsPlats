@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.55.0"
+  },
+  "name": "petitsplats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./public/style.css --style compressed",
+    "prefix": "postcss ./public/style.css --use autoprefixer -d ./public/css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

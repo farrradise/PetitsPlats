@@ -1,0 +1,89 @@
+
+.allFilters {
+    display : flex;
+    flex-flow : row wrap;
+    align-items: flex-start;
+
+    > * {
+        margin : 20px 30px 20px 0;
+    }
+
+    &__cat {
+        font-family: sans-serif;
+        border-radius: 5px;
+        overflow: hidden;
+        &#ingredients {
+            background-color : $ingredients;
+        }
+    
+        &#ustensils {
+            background-color : $ustensiles;
+        }
+    
+        &#appliances {
+            background-color : $appareils;
+        }
+    
+    
+    
+    
+        .dropdown {
+            border: 1px solid red;
+            // max-height : 350px;
+            width :100%;
+            padding : 0px;
+            font-weight: 700;
+            color : white;
+            // display :flex;
+            // flex-flow : column nowrap;
+           
+            .btn {
+                width : 100%;
+                display : flex;
+                justify-content: space-between;
+                cursor: pointer;
+            }
+            &__menu {
+                flex-flow : column wrap;
+                max-height : 0px;
+                list-style: none;
+                padding : 5px 15px ;
+                margin : 0;
+                font-weight: 400;
+                line-height: 2rem;
+                display: none;
+                transition: all 0.3s ease-in-out;
+                
+                &.open {
+                    display :flex;
+                    max-height : 360px;
+                    // height : 360px;
+                }
+            }
+            &__item {
+                flex: 1 1 10px;
+                padding-right : 40px;
+                position: relative;
+                &:before {
+                    content :"";
+                    border : 0px solid white;
+                    transition: all 0.3S ease;
+                }
+                &:hover {
+                    cursor: pointer;
+
+                    &:before {
+                        flex-flow : row nowrap;
+                        border-right : 4px solid white;
+                        height : 100%;
+                        margin-right : 5px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+

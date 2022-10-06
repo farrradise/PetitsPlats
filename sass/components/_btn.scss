@@ -1,0 +1,22 @@
+.btn {
+    border: none;
+    padding : 25px 15px;
+    font-weight: 700;
+    color : white;
+    font-family: sans-serif;
+    border-radius: 5px;
+     i {
+        margin-left : 30px;
+     }
+
+    &-ingredients {
+        background-color: $ingredients;
+    }
+
+    &-appareils {
+        background-color: $appareils;
+    }
+    &-ustensiles {
+        background-color: $ustensiles;
+    }
+}

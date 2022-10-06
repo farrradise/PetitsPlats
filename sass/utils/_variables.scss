@@ -1,0 +1,21 @@
+// Variables Couleurs 
+$ingredients: #3282F7;
+$ustensiles: #ED6454;
+$appareils : #68D9A4;
+
+
+$custom-colors: (
+  "ingredients": $ingredients,
+  "ustensiles": $ustensiles,
+  "appareils": $appareils
+);
+
+
+// Paddings et margins
+$padding-classique : 20px;
+
+// Valeurs Breakpoints
+$breakpoints: (
+  mobile: 599px,
+  tablet: 768px
+);
