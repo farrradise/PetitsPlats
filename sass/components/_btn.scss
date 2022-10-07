@@ -16,7 +16,30 @@
     &-appareils {
         background-color: $appareils;
     }
+
     &-ustensiles {
         background-color: $ustensiles;
     }
+}
+
+.tags {
+    margin-top : 40px;
+}
+.tag {
+    @extend .btn;
+    margin : 10px 10px 0 0;
+    padding : 5px 10px;
+
+    &[data-filtercat="ustensiles"] {
+        background-color : $ustensiles
+    }
+
+    &[data-filtercat="appareils"] {
+        background-color : $appareils
+    }
+
+    &[data-filtercat="ingredients"] {
+        background-color : $ingredients
+    }
+
 }
